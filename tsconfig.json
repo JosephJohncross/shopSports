@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "es2020",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "jsxFactory": "createElement"        
+    }
+}
