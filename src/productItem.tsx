@@ -13,22 +13,26 @@ export class ProductItem {
   };
 
   getContent(): HTMLElement {
+    const path: string = "./src/images/";
     return (
       <div className="card">
-        <h4>
-          {this.props.product.name}
-          <span className="">${this.props.product.price.toFixed(2)}</span>
-        </h4>
-        <div className="">
-          {this.props.product.description}
-          <button className="" onclick={this.handleAddToCart}>
-            Add To Cart
-          </button>
-          <select className="" onchange={this.handleQuantityChange}>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
+        <img src={`${path}${this.props.product.image}`} alt="" />
+        <div className="product__details">
+          <h4>
+            {this.props.product.name}
+            <span className="price">${this.props.product.price.toFixed(2)}</span>
+          </h4>
+          <div className="">
+            {this.props.product.description}
+            <button className="add__cart" onclick={this.handleAddToCart}>
+              Add To Cart
+            </button>
+            {/* <select className="" onchange={this.handleQuantityChange}>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select> */}
+          </div>
         </div>
       </div>
     );

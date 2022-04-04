@@ -4,6 +4,8 @@
         "target": "es2020",
         "outDir": "./dist",
         "rootDir": "./src",
-        "jsxFactory": "createElement"        
+        "jsxFactory": "createElement",
+        // "allowJs": true,
+        // "checkJs": true     
     }
 }

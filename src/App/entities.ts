@@ -3,7 +3,8 @@ export type Product = {
     name: string,
     description: string,
     category: string,
-    price: number
+    price: number,
+    image: string
 }
 
 export class OrderLine {

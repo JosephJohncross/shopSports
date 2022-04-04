@@ -21,9 +21,7 @@ document.onreadystatechange = () => {
   }
 };
 
-const header = document.querySelector('.header');
-const card = document.querySelector('.card');
-// card.addEventListener('mouseenter', cardAnimationHandler);
+
 
 
 
