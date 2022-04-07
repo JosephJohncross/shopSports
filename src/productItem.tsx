@@ -16,7 +16,9 @@ export class ProductItem {
     const path: string = "./src/images/";
     return (
       <div className="card">
-        <img src={`${path}${this.props.product.image}`} alt="" />
+        <div className="img_container">
+          <img src={`${path}${this.props.product.image}`} alt="" loading="lazy"/>
+        </div>
         <div className="product__details">
           <h4>
             {this.props.product.name}

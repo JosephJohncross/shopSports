@@ -1,6 +1,4 @@
 window.addEventListener("DOMContentLoaded", () => {
-  console.log("Document has been loaded");
-
   const closeMenuBtn = document.querySelector(".close");
   const openMenuBtn = document.querySelector(".open");
 
