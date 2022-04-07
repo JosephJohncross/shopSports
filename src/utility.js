@@ -5,12 +5,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const openMenuBtn = document.querySelector(".open");
 
   if (document.readyState === "complete") {
-    
     const nav = document.querySelectorAll(".nav__column");
-    nav.addEventListener('click', () => {
-        categoryBtn.addEventListener("click", this.navcloseHandler.bind(this));
-
-    })
+    nav.addEventListener("click", () => {
+      categoryBtn.addEventListener("click", this.navcloseHandler.bind(this));
+    });
   }
   openMenuBtn.addEventListener("click", () => {
     if (document.readyState === "complete") {
