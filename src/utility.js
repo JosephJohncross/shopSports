@@ -1,13 +1,30 @@
 window.addEventListener("DOMContentLoaded", () => {
   const closeMenuBtn = document.querySelector(".close");
   const openMenuBtn = document.querySelector(".open");
+  const app = document.querySelector('.app');
 
-  if (document.readyState === "complete") {
-    const nav = document.querySelectorAll(".nav__column");
-    nav.addEventListener("click", () => {
-      categoryBtn.addEventListener("click", this.navcloseHandler.bind(this));
-    });
-  }
+  app.addEventListener('mouseover' , () => {
+    if (document.readyState === "complete") {
+      const modal = document.querySelector('.add-modal');
+      const bodyColumn = document.querySelector('.body__column'); 
+  
+      bodyColumn.addEventListener('click', (event) => {
+        let target = event.target;
+        if (target.tagName !== "BUTTON"){
+          return;
+        }
+        else{
+          setTimeout(()=>{
+          modal.classList.add('active');
+            setTimeout(() => {
+              modal.classList.remove('active');
+            }, 2000);     
+          }, 300);
+        }
+      })
+    }
+  })
+  
   openMenuBtn.addEventListener("click", () => {
     if (document.readyState === "complete") {
       const navMenu = document.querySelector(".nav__column");
@@ -37,5 +54,9 @@ function navcloseHandler() {
     }
     closeMenuBtn.style.display = "none";
     openMenuBtn.style.display = "block";
+  }
+
+  function addMessageModal() {
+    
   }
 }
