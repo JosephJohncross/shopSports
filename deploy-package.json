@@ -1,0 +1,10 @@
+{
+    "name": "webapp",
+    "description":"An e-commerce sports shop",
+    "repository": "https://github.com/JosephJohncross/shopSports",
+    "license":"OBSD",
+    "devDependencies": {
+        "express": "4.17.1",
+        "json-server": "0.16.3"
+    }
+}

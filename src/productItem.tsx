@@ -13,7 +13,7 @@ export class ProductItem {
   };
 
   getContent(): HTMLElement {
-    const path: string = "./src/images/";
+    const path: string = "/images/";
     return (
       <div className="card">
         <div className="img_container">
